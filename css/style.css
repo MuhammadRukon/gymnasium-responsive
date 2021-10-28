@@ -1,0 +1,792 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    text-align: center;
+}
+.title h3{
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    color: #222222;  
+}
+ul,ol{
+    list-style: none;
+}
+a,a:hover,a:focus{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+/********** navbar css start *************/
+nav{
+    background: rgba(53, 53, 53, .25);
+    left: 0;
+    z-index: 999;
+}
+nav button i{
+    color: white;
+    border: 1px solid white;
+    padding: 6px 12px;
+    border-radius: 10%;
+}
+.navbar{
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    top: 30px;
+}
+.nav-link{
+    display: inline-block;
+    padding: 20px 0;
+}
+.navbar-brand{
+    position: relative;
+}
+.navbar-brand .logo{
+    width: 240px;
+    height: 76px;
+    position: absolute;
+    top: -34px;
+    left: 0;
+    background: #323232;
+    text-align: center;
+    line-height: 65px;
+    transform: skew(-30deg);
+    border: 3px solid #020202;
+}
+.navbar-brand .logo img{
+    transform: skew(30deg);
+}
+nav ul li a{
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    transition: .4s;
+    position: relative;   
+}
+nav ul li a:hover{
+    color: black;
+    background: white;
+}
+nav ul li a:after{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #e23e38;
+    transition: .4s;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+/*********** navbar css end ************/
+
+/*********** banner css start ************/
+#banner-part{
+    position: relative;
+}
+#banner-part .slider .banner{
+    background: url(../images/banner.png) no-repeat center;
+    background-size: cover;
+    height: 600px;
+}
+#banner-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#banner-part  .overlay h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    padding: 244px 0 20px 0;
+}
+#banner-part  .overlay h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: #e23e38;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 30px;
+}
+#banner-part  .overlay p{
+    font-size: 13px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    width: 46%;
+    margin: 0 auto;
+}
+#banner-part  .overlay .btn{
+    padding-bottom: 117px;
+    padding-top: 30px;
+    padding-right: 30px;
+    z-index: 999;
+}
+
+#banner-part  .overlay .btn a{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 15px;
+    margin-left: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+#banner-part  .overlay .btn a:hover{
+    background: #e23e38;
+    color: white;
+    border: 2px solid #e23e38;
+}
+#banner-part ul{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+#banner-part ul li{
+    display: inline-block;
+}
+#banner-part ul li button{
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 10px;
+    transition: .4s;
+}
+#banner-part .slick-active button{
+    width: 20px;
+    height: 20px;
+    background: #e23e38;
+    border-radius: 50%;
+    border: 1px solid #e23e38;
+    outline: 0;
+}
+#banner-part .shape{
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*********** banner css end ************/
+
+/*********** about css start ************/
+#about-part{
+    margin: 80px 0;
+}
+#about-part .about .video{
+    position: relative;
+}
+#about-part .about .video img{
+    width: 96%;
+}
+#about-part .about .video .overlay{
+    width: 96%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#about-part .about .video .overlay i{ 
+    font-size: 55px;
+    background: transparent;
+    color: white;
+    transition: .4s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#about-part .about .video .overlay i:hover{
+    color: #e23e38;
+}
+#about-part .about .description{
+    text-align: center;
+}
+
+#about-part .about .description p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;  
+    margin: 0 auto;
+    width: 94%;
+    padding-top: 19px;
+}
+#about-part .about .description .p1{
+    padding-top: 22px;
+}
+/*********** about css end ************/
+
+/*********** gallery css start ************/
+#gallery-part{
+    background: url(../images/gallery-banner.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    margin-top: 10px;
+}
+   #gallery-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    padding-bottom: 30px;
+}
+  #gallery-part .overlay .img img{
+    width: 100%;
+}
+#gallery-part .overlay .img{
+    margin-top: 30px;
+    position: relative;
+}
+#gallery-part .overlay .img .overlay{
+    width: 0;
+    height: 0;
+    background: rgba(226, 62, 56, .5);
+    border: 5px solid rgb(255, 255, 255, .5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .4s;
+    opacity: 0;
+}
+#gallery-part .overlay .img:hover .overlay{
+    width: 95%;
+    height: 95%;
+    opacity: 1;
+}
+#gallery-part .overlay .img .overlay i{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .4s;
+    opacity: 0;
+}
+#gallery-part .overlay .img:hover .overlay i{
+    opacity: 1;
+}
+/*********** gallery css end ************/
+
+/*********** team css start ************/
+#team-part{
+    margin: 80px 0;
+}
+#team-part .row .full{
+    height: 450px;
+}
+#team-part .row .member{
+    width: 270px;
+    height: 340px;
+    text-align: center;
+    border-bottom: 0;
+    position: relative;
+    margin-top: 60px;
+}
+#team-part .row .member .img{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    padding-top: 10px;
+    background: #f1f1f1;
+    position: relative;
+    transition: .4s;
+}
+#team-part .row .member:hover .img{
+    margin-top: -50px;
+}
+#team-part .row .member .img .overlay{
+    width: 0;
+    height: 0;
+    background: rgba(226, 62, 56, .5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: .4s; 
+}
+#team-part .row .member .img:hover .overlay{
+    width: 95%;
+    height: 95%;
+    opacity: 1;
+}
+#team-part .row .member .img .overlay .social-media{
+    display: grid;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#team-part .row .member .img .overlay a i{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    line-height: 30px;
+    font-size: 16px;
+    border: 1px solid white;
+    color: white;
+    margin: 5px 0;
+    transition: .4s;
+}
+#team-part .row .member .img .overlay a:hover i{
+    background: white;
+    color: rgb(21, 164, 221);
+}
+#team-part .row .member .text{
+    height: 20%;
+    background: white;
+    font-family: 'Oswald', sans-serif;
+    
+}
+#team-part .row .member .text h4{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+#team-part .row .member .text p{
+    font-size: 13px;
+}
+#team-part .row .member .message{
+    height: 118px;
+    width: 270px;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    top: 135px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #dddddd;
+    border-top: 0;
+    z-index: -1;
+}
+#team-part .row .member .message p{
+    padding: 50px 23px 0 22px;
+}
+#team-part .row .member:hover .message{
+    top: 272px; 
+    z-index: 0;
+}
+/*********** team css end ************/
+
+/*********** testi css start ************/
+#testi-part{
+    background: url(../images/testi-banner.png) no-repeat center;
+    background-size: cover;
+    height: 270px;
+    margin-top: 30px;
+    position: relative;
+}
+#testi-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+}
+#testi-part .overlay .testi-slider{
+    display: flex;
+    justify-content: space-between;
+}
+#testi-part .overlay .testi-slider .testimonial{
+    width: 49%;
+    margin-top: 30px;
+}
+#testi-part .overlay .testi-slider .testimonial .member{
+    display: flex;
+}
+#testi-part .overlay .testi-slider .testimonial .member .img{
+    width: 80px;
+    height: 80px;
+}
+#testi-part .overlay .testi-slider .testimonial .member .id{
+    display: inline-block;
+    color: white;
+    margin-left: 10px;
+}
+#testi-part .overlay .testi-slider .testimonial .member .id  p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+}
+
+#testi-part .overlay .testi-slider .testimonial .id i{
+    color: #e23e38;
+    font-size: 14px;
+}
+#testi-part .overlay .testi-slider .testimonial .describe{
+    color: white;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    width: 90%;
+    margin-top: 10px;
+}
+#testi-part ul{
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+#testi-part ul li{
+    display: inline-block;
+}
+#testi-part ul li button{
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 10px;
+    transition: .4s;
+}
+#testi-part .slick-active button{
+    width: 18px;
+    height: 18px;
+    background: #e23e38;
+    border-radius: 50%;
+    border: 1px solid #e23e38;
+    margin-right: 10px;
+    outline: 0;
+}
+/*********** testi css end ************/
+
+/*********** membership css start ************/
+#member-part{
+    margin-top: 80px;
+}
+#member-part .item{
+    background: #f1f1f1;
+    transition: .4s;
+    margin-top: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+#member-part .item .top{
+    background: #dddddd;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    transition: .4s;
+}
+#member-part .item:hover .top{
+    background: #e23e38;
+    color: white;
+}
+#member-part .item:hover .bottom{
+    background:  #e23e38;
+}
+#member-part .item:hover .bottom a{
+    color: white;
+}
+#member-part .item .top p{
+    font-size: 16px;
+    font-weight: 900;
+}
+#member-part .item .middle{
+    text-align: center;
+    position: relative;
+    transition: .4s;
+}
+#member-part .item .middle .price{
+    background: url(../images/plan1.png) center no-repeat;
+    background-size: cover;
+    color: white;
+}
+#member-part .item .middle .price span{
+    font-size: 50px;
+}
+#member-part .item .middle .price h2{
+    font-size: 29px;
+    padding: 40px 0;
+}
+#member-part .item .middle .plan2{
+    background: url(../images/plan2.png) center no-repeat;
+    background-size: cover;
+}
+#member-part .item .middle .plan3{
+    background: url(../images/plan3.png) center no-repeat;
+    background-size: cover;
+}
+#member-part .item .middle .list{
+    margin-bottom: 20px;
+}
+#member-part .item .middle ul li{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #353535;
+    margin-top: 25px;
+}
+#member-part .item .bottom{
+    padding: 10px 0;
+    text-align: center;
+    background: #dddddd;
+    transition: .4s; 
+}
+#member-part .item .bottom a{
+    font-size: 16px;
+    color: black;
+    transition: .4s;
+} 
+/*********** membership css end ************/
+
+/*********** counter css start ************/
+#counter-part{
+    background: url(../images/counter-banner.png) no-repeat center;
+    background-size: cover;
+    margin: 80px 0;
+}
+#counter-part .row{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+#counter-part .row .box{
+    text-align: center;
+    padding: 40px 0;
+}
+#counter-part .row  h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+#counter-part .row  p{
+    font-size: 16px;
+}
+/*********** counter css end ************/
+
+/*********** classes css start ************/
+#class-part{
+    position: relative;
+}
+#class-part .tab{
+    width: 100% !important;
+    border-radius: 0 !important;
+}
+#class-part .tab::before{
+    color: black !important;
+    font-size: 50px !important;
+}
+#class-part .tab .day{
+    background: #f1f1f1;
+}
+#class-part .tab li a{
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+}
+#class-part .tab .day li.active a{
+    color: #fff !important;
+    background: #e23e38;
+}
+#class-part .tab .day li:hover a{
+    color: #fff !important;
+    background: #e23e38;
+}
+#class-part .class{
+    margin-top: 30px;
+    padding: 0 !important;
+}
+#class-part .class ul li {
+    display: inline-block;
+    text-align: center;
+    float: left;
+    width: 217px;
+    height: 200px;
+    background: #f1f1f1;
+    padding-top: 50px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border: 1px solid #f1f1f1;
+    transition: .4s;
+}
+#class-part .class ul li h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #222222;
+    margin-bottom: 20px;
+    transition: .4s;
+}
+#class-part .class ul li i{
+    font-size: 50px;
+    color: #000;
+    transition: .4s;
+}
+#class-part .class ul li p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    margin-top: 10px;
+    transition: .4s;
+}
+#class-part .class ul li:hover{
+    background: #e23e38;
+}
+#class-part .class ul li:hover h5{
+    color: #fff !important;
+}
+#class-part .class ul li:hover i:before{
+    color: #fff !important;
+}
+#class-part .class ul li:hover p{
+    color: #fff !important;
+}
+#class-part .workplace ul li img {
+    background: #f1f1f1;
+    width: 97%;
+}
+#class-part .prev{
+    font-size: 28px;
+    color: #444444;
+    position: absolute;
+    left: -35px;
+    bottom: 34%;
+}
+#class-part .next{
+    font-size: 28px;
+    color: #444444;
+    position: absolute;
+    right: -35px;
+    bottom: 34%;
+}
+/*********** classes css end ************/
+
+/*********** footer css start ************/
+#footer-part{
+    background: url(../images/footer-banner.png) no-repeat center;
+    background-size: cover;
+    margin-top: 80px;
+}
+#footer-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+}
+#footer-part .footer-logo{
+    text-align: center;
+    border-bottom: 1px solid white ;
+}
+#footer-part .footer-logo .img{
+    padding: 30px 0;
+}
+#footer-part .box{
+    margin: 30px 0;
+    color: white;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+#footer-part .box h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+#footer-part .box .schedule{
+    display: flex;
+}
+#footer-part .box .schedule ul li{
+    margin-bottom: 7px;
+}
+#footer-part .box .schedule .time{
+    margin-left: 40px;
+}
+#footer-part .box .feed{
+    display: flex;
+}
+#footer-part .box .feed .icon i{
+    font-size: 20px;
+    color: #1da1f2;
+}
+#footer-part .box .feed .text{
+    padding-left: 10px;
+}
+#footer-part .box .feed .text p{
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+#footer-part .box .feed .text span{
+    display: block;
+    font-weight: 700;
+}
+#footer-part .box3{
+    margin-left: -10px;
+}
+#footer-part .box3 ul li {
+    display: inline-block;
+    padding: 5px;
+    width: 63px;
+    height: 64px;
+}
+#footer-part .box3 ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+#footer-part .box4{
+    width: 256px;
+}
+#footer-part .box .contacts{
+    display: flex;
+}
+#footer-part .box .contacts .icon i{
+    color: #e23e38;
+}
+#footer-part .box .contacts .text{
+    padding-left: 10px;
+}
+#footer-part .box .contacts .text p{
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+#footer-part .box .contacts .text span{
+    display: block;
+    font-weight: 700;
+}
+#footer-part .box .social-media{
+    margin-top: -15px;
+}
+#footer-part .box .social-media .icon{
+   display: inline-block;
+   border: 1px solid white;
+   height: 30px;
+   width: 30px;
+   text-align: center;
+   line-height: 30px;
+   font-size: 16px;
+   transition: .2s;
+   margin-right: 10px;
+   
+}
+#footer-part .box .social-media .icon:hover{
+    border: 1px solid #e23e38;
+    background: #e23e38;
+    color: #fff;
+}
+#footer-part .copyright{
+    text-align: center;
+    color: white;
+    border-top: 1px solid white;
+    padding: 20px 0;
+}
+#footer-part .copyright p{
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+#footer-part .copyright a{
+    color: #e23e38;
+}
+/*********** footer css end ************/

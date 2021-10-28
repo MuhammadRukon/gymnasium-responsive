@@ -1,0 +1,466 @@
+@media(min-width:320px) and (max-width:575px){
+    /* nav bar start*/
+    .nav-link{
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+    nav ul{
+        background: #e23e38;
+        margin-top: -5px;
+    }
+    nav ul li a:hover:after{
+        width: 0;
+    }
+    .navbar{
+        top: 0;
+        height: 60px;
+        background: #e23e38;
+        border-bottom: 2px solid white ;
+    }
+    .navbar-brand .logo{
+        width: 200px;
+        height: 59px;
+        position: unset;
+        margin-top: -6px;
+        background: #323232;
+        text-align: center;
+        line-height: 54px;
+        border: none;
+    }
+    /* nav bar end*/
+
+    /* banner start */
+    #banner-part .slider .banner{
+        height: 480px;
+    }
+    #banner-part  .overlay h2{
+        font-size: 18px;
+        padding: 144px 0 10px 0;
+    }
+    #banner-part  .overlay h1{
+        font-size: 32px;
+        padding-bottom: 30px;
+    }
+    #banner-part .overlay p{
+        font-size: 13px;
+        width: 87%;
+    }
+    #banner-part .shape{
+        display: none;
+    }
+    #banner-part ul{
+        position: absolute;
+        bottom: 0;
+    }
+    #banner-part ul li button{
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+    }
+    #banner-part .slick-active button{
+        width: 13px;
+        height: 13px;
+    }
+     /* banner end */
+
+     /* about start */
+     #about-part{
+        margin: 50px 0;
+    }
+     #about-part .about{
+         display: flex;
+         flex-direction: column-reverse;
+     }
+     #about-part .about .video {
+        margin-top: 20px;
+     }
+     #about-part .about .video img {
+        width: 100%;
+    }
+    #about-part .about .video .overlay {
+        width: 100%;
+    }
+    #about-part .about .description p {
+        width: 100%;
+    }
+     /* about end */
+
+     /* team start*/
+     #team-part{
+         margin-top: 50px;
+         margin-bottom: 30px;
+     }
+    #team-part .row .member{
+        width: 100%;
+    }
+     #team-part .row .member .message {
+        width: 100%;
+        top: 272px;
+        z-index: 1;
+    }
+    #team-part .row .member .img{
+        margin-top: -50px;
+    }
+    #team-part ul{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #team-part ul li{
+        display: inline-block;
+    }
+    #team-part ul li button{
+        width: 12px;
+        height: 12px;
+        margin-right: 5px;
+        border-radius: 50%;
+        font-size: 0;
+        background: transparent;
+        border: 2px solid #e23e38;
+        transition: .2s;
+    }
+    #team-part .slick-active button{
+        width: 13px;
+        height: 13px;
+        background: #e23e38;
+    }
+     /* team end*/
+
+     /* testimonial start */
+     #testi-part{
+        height: 340px;
+    }
+    #testi-part .overlay .testi-slider .testimonial {
+        margin-left: 15px;
+    }
+    #testi-part .overlay .testi-slider .testimonial .describe{
+        width: 94%;
+    }
+    #testi-part ul{
+        bottom: -55px;
+    }
+    #testi-part .slick-active button{
+        width: 15px;
+        height: 15px;
+    }
+     /* testimonial end */
+
+     /* member start */
+     #member-part{
+        margin-top: 50px;
+    }
+    #member-part .item{
+        margin-top: 15px;
+    }
+    #member-part .item .middle ul{
+        margin: 25px 0;
+    }
+    #member-part .item .middle ul li{
+        margin-top: 10px;
+    }
+    #member-part .item .middle .price span{
+        font-size: 30px;
+    }
+    #member-part .item .middle .price h2 {
+        padding: 20px 0;
+        font-size: 22px;
+        font-weight: 800;
+    }
+    #member-part .item .top {
+        background: #dddddd;
+        color: black;
+        text-align: center;
+        padding: 12px 0;
+    }
+    /* member end */
+
+    /* counter start */
+    #counter-part{
+        background: url(../images/counter-banner.png) no-repeat center;
+        background-size: cover;
+        margin: 50px 0;
+        padding: 20px 0;
+    }
+    #counter-part .row .box {
+        padding: 20px 0;
+    }
+    /* counter end */
+
+    /* class start */
+    .colorful-tab-menu{
+        flex-direction: row;
+    }
+    .colorful-tab-menu-item a {
+    padding: 20px 12px;
+    }
+    #class-part .class ul li {
+        padding-top: 10px;
+        width: 48.2%;
+        height: 170px;
+    }
+    /* class end */
+
+    /* footer start */
+    #footer-part .box {
+        margin: 0;
+        padding-top: 30px;
+    }
+    #footer-part .box .schedule ul li {
+        margin-bottom: 5px;
+    }
+    #footer-part .box h4 {
+        margin-bottom: 20px;
+    }
+    #footer-part .box3 ul li {
+        display: inline-block;
+        padding: 5px;
+        width: 24%;
+        height: 24%;
+    }
+    #footer-part .box .social-media {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    #footer-part .box .social{
+        margin-top: 20px;
+    }
+    /* footer end*/
+}
+
+
+
+@media(min-width:576px) and (max-width:767px){
+    /* nav bar start*/
+    .nav-link{
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+    nav ul{
+        background: #e23e38;
+        margin-top: -5px;
+    }
+    nav ul li a:hover:after{
+        width: 0;
+    }
+    .navbar{
+        top: 0;
+        height: 60px;
+        background: #e23e38;
+        border-bottom: 2px solid white ;
+    }
+    .navbar-brand .logo{
+        width: 200px;
+        height: 59px;
+        position: unset;
+        margin-top: -6px;
+        background: #323232;
+        text-align: center;
+        line-height: 54px;
+        border: none;
+    }
+    /* nav bar end*/
+
+    /* banner start */
+    #banner-part .slider .banner{
+        height: 480px;
+    }
+    #banner-part  .overlay h2{
+        font-size: 18px;
+        padding: 144px 0 10px 0;
+    }
+    #banner-part  .overlay h1{
+        font-size: 32px;
+        padding-bottom: 30px;
+    }
+    #banner-part .overlay p{
+        font-size: 13px;
+        width: 87%;
+    }
+    #banner-part .shape{
+        display: none;
+    }
+    #banner-part ul{
+        position: absolute;
+        bottom: 0;
+    }
+    #banner-part ul li button{
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+    }
+    #banner-part .slick-active button{
+        width: 13px;
+        height: 13px;
+    }
+     /* banner end */
+
+     /* about start */
+     #about-part{
+        margin: 50px 0;
+    }
+     #about-part .about{
+         display: flex;
+         flex-direction: column-reverse;
+     }
+     #about-part .about .video {
+        margin-top: 20px;
+     }
+     #about-part .about .video img {
+        width: 100%;
+    }
+    #about-part .about .video .overlay {
+        width: 100%;
+    }
+    #about-part .about .description p {
+        width: 100%;
+    }
+     /* about end */
+
+     /* team start*/
+     #team-part{
+         margin-top: 50px;
+         margin-bottom: 30px;
+     }
+    #team-part .row .member{
+        width: 100%;
+    }
+     #team-part .row .member .message {
+        width: 100%;
+        top: 272px;
+        z-index: 1;
+    }
+    #team-part .row .member .message p {
+        padding: 50px 10px 0 10px;
+    }
+    #team-part .row .member .img{
+        margin-top: -50px;
+    }
+    #team-part ul{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #team-part ul li{
+        display: inline-block;
+    }
+    #team-part ul li button{
+        width: 12px;
+        height: 12px;
+        margin-right: 5px;
+        border-radius: 50%;
+        font-size: 0;
+        background: transparent;
+        border: 2px solid #e23e38;
+        transition: .2s;
+    }
+    #team-part .slick-active button{
+        width: 13px;
+        height: 13px;
+        background: #e23e38;
+    }
+     /* team end*/
+
+     /* testimonial start */
+     #testi-part{
+        height: 340px;
+    }
+    #testi-part .overlay .testi-slider .testimonial {
+        margin-left: 15px;
+    }
+    #testi-part .overlay .testi-slider .testimonial .describe{
+        width: 94%;
+    }
+    #testi-part ul{
+        bottom: -55px;
+    }
+    #testi-part .slick-active button{
+        width: 15px;
+        height: 15px;
+    }
+     /* testimonial end */
+
+     /* member start */
+     #member-part{
+        margin-top: 50px;
+    }
+    #member-part .item{
+        margin-top: 15px;
+    }
+    #member-part .item .middle ul{
+        margin: 25px 0;
+    }
+    #member-part .item .middle ul li{
+        margin-top: 10px;
+    }
+    #member-part .item .middle .price span{
+        font-size: 30px;
+    }
+    #member-part .item .middle .price h2 {
+        padding: 20px 0;
+        font-size: 22px;
+        font-weight: 800;
+    }
+    #member-part .item .top {
+        background: #dddddd;
+        color: black;
+        text-align: center;
+        padding: 12px 0;
+    }
+    /* member end */
+
+    /* counter start */
+    #counter-part{
+        background: url(../images/counter-banner.png) no-repeat center;
+        background-size: cover;
+        margin: 50px 0;
+        padding: 20px 0;
+    }
+    #counter-part .row .box {
+        padding: 20px 0;
+    }
+    /* counter end */
+
+    /* class start */
+    .colorful-tab-menu{
+        flex-direction: row;
+    }
+    .colorful-tab-menu-item a {
+    padding: 20px 12px;
+    }
+    #class-part .class ul li {
+        padding-top: 10px;
+        width: 48.2%;
+        height: 170px;
+    }
+    /* class end */
+
+    /* footer start */
+    #footer-part .box {
+        margin: 0;
+        padding-top: 30px;
+    }
+    #footer-part .box .schedule ul li {
+        margin-bottom: 5px;
+    }
+    #footer-part .box h4 {
+        margin-bottom: 20px;
+    }
+    #footer-part .box3 ul li {
+        display: inline-block;
+        padding: 5px;
+        width: 24%;
+        height:24%;
+    }
+    #footer-part .box .social-media {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    #footer-part .box .social{
+        margin-top: 20px;
+    }
+    /* footer end*/
+}
